@@ -225,15 +225,15 @@ Features:
 
 ### Executive Overview
 
-[Insert Screenshot]
+![Executive Overview](images/executive_overview.png)
 
 ### Operations Analysis
 
-[Insert Screenshot]
+![Operations Analysis](images/operations_analysis.png)
 
 ### Driver Performance Analysis
 
-[Insert Screenshot]
+![Driver Performance](images/driver_performance.png)
 
 ---
 
