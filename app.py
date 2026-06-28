@@ -174,7 +174,7 @@ with col4:
     st.markdown(f'<div class="kpi-card"><div class="kpi-title">Fast Deliveries</div><div class="kpi-value">{fast_del_pct:.1f}%</div></div>', unsafe_allow_html=True)
 
 # --- TABS ---
-tab1, tab2, tab3, tab4 = st.tabs(["📊 Executive Overview", "⚙️ Operations Analysis", "🛵 Driver Performance", "💡 Business Insights"])
+tab1, tab2, tab3, tab4, tab5 = st.tabs(["📊 Executive Overview", "⚙️ Operations Analysis", "🛵 Driver Performance", "💡 Business Insights", "📈 PowerBI Dashboards"])
 
 zomato_red = '#E23744'
 color_discrete_sequence = ['#E23744', '#1C1C1C', '#FF7E67', '#A9A9A9', '#4CAF50']
@@ -339,3 +339,27 @@ with tab4:
     - On festivals or big cricket match days, order volume jumps suddenly and riders get overwhelmed.
     - **What we should do**: Predict these spikes and offer guaranteed minimum payouts to riders who log in for the full shift. This ensures we have enough hands on deck before the rush starts.
     """)
+
+with tab5:
+    st.header("PowerBI Dashboard Screenshots")
+    st.markdown("Below are the PowerBI dashboard views for comprehensive reporting and comparison.")
+    
+    import os
+    
+    st.subheader("1. Executive Overview")
+    if os.path.exists("images/01_executive_overview.png"):
+        st.image("images/01_executive_overview.png", use_container_width=True)
+    else:
+        st.info("Screenshot not found at images/01_executive_overview.png")
+        
+    st.subheader("2. Operations Analysis")
+    if os.path.exists("images/02_operations_analysis.png"):
+        st.image("images/02_operations_analysis.png", use_container_width=True)
+    else:
+        st.info("Screenshot not found at images/02_operations_analysis.png")
+        
+    st.subheader("3. Driver Performance")
+    if os.path.exists("images/03_driver_performance.png"):
+        st.image("images/03_driver_performance.png", use_container_width=True)
+    else:
+        st.info("Screenshot not found at images/03_driver_performance.png")
